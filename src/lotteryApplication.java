@@ -12,7 +12,7 @@ public class lotteryApplication {
         System.out.println("#### ATUALMENTE SOMENTE JOGOS DA MEGASENA E LOTOFACIL ESTÃO DISPONÍVEIS ####");
         System.out.println();
         Scanner input = new Scanner(System.in);
-        System.out.println("Digite 1 para service.impl.Megasena ou 2 para Lotofácil: ");
+        System.out.println("Digite 1 para Megasena ou 2 para Lotofácil: ");
         int game = input.nextInt();
 
         if (game == 1) {
@@ -35,5 +35,6 @@ public class lotteryApplication {
         String voucher = gameCalculator.calculate(quantity, numbersOfGame, gameType);
         System.out.println();
         System.out.println("ID da transação: "+ voucher);
+        System.out.println();
     }
 }
