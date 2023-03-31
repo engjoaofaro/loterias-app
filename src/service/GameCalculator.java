@@ -6,11 +6,11 @@ public class GameCalculator {
         String voucher = null;
         try {
             voucher = game.generator(quantity, numbersOfGame);
+            System.out.println();
+            System.out.println("Jogo(s) gerado(s) com sucesso!");
         } catch (Exception e) {
             System.out.println("Ocorreu um erro ao tentar gerar os jogos: "+ e);
         }
-        System.out.println();
-        System.out.println("Jogo(s) gerado(s) com sucesso!");
         return voucher;
     }
 }

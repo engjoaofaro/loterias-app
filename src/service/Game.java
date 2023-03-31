@@ -35,4 +35,5 @@ public abstract class Game {
     }
 
     protected abstract String generator(int quantity, int numbersOfGame);
+    protected abstract Boolean canPlayGame(int minNumberOfGame);
 }
